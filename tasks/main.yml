@@ -1,0 +1,16 @@
+---
+# common tasks file for ubuntu
+- name: Update repo and upgrade packages
+  apt:
+    upgrade: dist
+    update_cache: yes
+
+- name: Install Common Packages
+  apt:
+    pkg:
+    - tree
+    - unzip
+    - curl
+    - htop
+    - wget
+    - ncdu
